@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+:root {
+    /* Colours */
+    --color-text: #fff;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+
+    /* Fonts */
+    --font-roboto: "Roboto";
+}
+
+html {
+    scroll-behavior: smooth; // Enable smooth scrolling
+  }
+  
+  /* Define styles for the active link (optional) */
+  .navbar a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  
+  .navbar a:active, .navbar a:focus {
+    color: var(--color-primary); // Customize the active link color
+  }
