@@ -9,41 +9,44 @@ import { Project } from './project.modal';
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      "title": "Project A",
+      "title": "Logistics Optimization Strategies in Fresh Fruit Supplychain",
       "imageSrc": "projects/project.png",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": [
-        "React",
-        "Express",
-        "Node"
+        "Java",
+        "Data Structures",
+        "OOPS",
+        "Algorithms"
       ],
       "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "source": "https://github.com/sanidhya-soni/Minor-Project-1"
     },
     {
-      "title": "Project B",
+      "title": "Microservice Based SaaS Application for Unified Communication in Campus",
       "imageSrc": "projects/project.png",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": [
-        "React",
-        "Express",
-        "Node",
-        "Sass"
+        "AWS ECS (Docker)",
+        "DynamoDb",
+        "AWS S3",
+        "Jenkins",
+        "NodeJS"
       ],
       "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "source": "https://github.com/sanidhya-soni/Minor-Project-2"
     },
     {
-      "title": "Project C",
+      "title": "Manas - Disease Prediction System",
       "imageSrc": "projects/project.png",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": [
-        "React",
-        "Express",
-        "Node"
+        "Docker",
+        "Jenkins",
+        "Flask",
+        "Python"
       ],
       "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "source": "https://github.com/sanidhya-soni/Manas-Hackathon-2.0"
     }
   ];
 }

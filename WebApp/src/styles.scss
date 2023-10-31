@@ -4,11 +4,11 @@
 
 :root {
     /* Colours */
-    --color-text: #fff;
+    --color-text: #000000;
     --color-primary: #576cbc;
-    --color-secondary: #19376d;
+    --color-secondary: #6674cc;
     --color-dark: #0b2447;
-    --color-bg: #04152d;
+    --color-bg: linear-gradient(to right, #ffffff, #6674cc5d);
 
     /* Fonts */
     --font-roboto: "Roboto";
@@ -19,11 +19,11 @@ html {
   }
   
   /* Define styles for the active link (optional) */
-  .navbar a {
-    color: var(--color-text);
-    text-decoration: none;
-  }
+  // .navbar a {
+  //   color: var(--color-text);
+  //   text-decoration: none;
+  // }
   
-  .navbar a:active, .navbar a:focus {
-    color: var(--color-primary); // Customize the active link color
-  }
+  // .navbar a:active, .navbar a:focus {
+  //   color: var(--color-primary); // Customize the active link color
+  // }

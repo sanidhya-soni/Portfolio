@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ExperienceComponent {
   skills: Skill[] = [
-    { title: 'Frontend Developer', imageSrc: 'skills/html.png' },
-    { title: 'Backend Developer', imageSrc: 'skills/react.png' },
-    { title: 'UI Designer', imageSrc: 'uiImage.png' },
-    { title: 'Frontend Developer', imageSrc: 'frontendImage.png' },
-    { title: 'Backend Developer', imageSrc: 'backendImage.png' },
-    { title: 'UI Designer', imageSrc: 'uiImage.png' }
+    { title: 'AWS', imageSrc: 'skills/aws.png' },
+    { title: 'Docker', imageSrc: 'skills/docker.png' },
+    { title: 'Jenkins', imageSrc: 'skills/jenkins.png' },
+    { title: 'Java', imageSrc: 'skills/java.png' },
+    { title: 'Angular', imageSrc: 'skills/angular.png' },
+    { title: 'Typescript', imageSrc: 'skills/typescript.png' }
   ];
 
   history: ExperienceItem[] = [
