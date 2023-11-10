@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                script {
+                    def awsCredentials = credentials('AWSCred')
+                    withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'AWSCred', accessKeyVariable: 'AWS_ACCESS_KEY_ID', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                        // Checkout the code from your GitHub repository
+                        checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/sanidhya-soni/Portfolio']]])
+                    }
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Change working directory to "webapp-front"
+                dir('webapp-front') {
+                    script {
+                        sh 'npm install'
+                        sh 'ng build'
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to S3') {
+            steps {
+                withCredentials([[
+                    $class: 'AmazonWebServicesCredentialsBinding',
+                    credentialsId: 'AWSCred',
+                    accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+                    secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
+                ]]) {
+                    sh 'aws s3 sync --acl public-read WebApp/dist/web-app/ s3://sani-portfolio'
+                }
+            }
+        }
+    }
+}
