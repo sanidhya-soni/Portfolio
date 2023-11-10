@@ -16,7 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Change working directory to "webapp-front"
-                dir('webapp-front') {
+                dir('WebApp') {
                     script {
                         sh 'npm install'
                         sh 'ng build'
