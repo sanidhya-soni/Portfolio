@@ -9,7 +9,6 @@ import { ExperienceComponent } from './experience/experience.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BannerComponent } from './banner/banner.component';
-import { ProjectCardComponent } from './projects/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { ProjectCardComponent } from './projects/project-card/project-card.compo
     ExperienceComponent,
     NavbarComponent,
     ProjectsComponent,
-    BannerComponent,
-    ProjectCardComponent
+    BannerComponent
   ],
   imports: [
     BrowserModule,
