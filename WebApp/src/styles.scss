@@ -1,29 +1,19 @@
     * {
-    margin: 0;
-}
+        margin: 0;
+    }
 
-:root {
-    /* Colours */
-    --color-text: #000000;
-    --color-primary: #576cbc;
-    --color-secondary: #6674cc;
-    --color-dark: #0b2447;
-    --color-bg: linear-gradient(to right, #ecea7d5d, rgb(243, 234, 196));
+    :root {
+        /* Colours */
+        --color-text: #000000;
+        --color-primary: #576cbc;
+        --color-secondary: #6674cc;
+        --color-dark: #0b2447;
+        --color-bg: linear-gradient(to right, #ecea7d5d, rgb(243, 234, 196));
 
-    /* Fonts */
-    --font-roboto: "Roboto";
-}
+        /* Fonts */
+        --font-roboto: "Roboto";
+    }
 
-html {
-    scroll-behavior: smooth; // Enable smooth scrolling
-  }
-  
-  /* Define styles for the active link (optional) */
-  // .navbar a {
-  //   color: var(--color-text);
-  //   text-decoration: none;
-  // }
-  
-  // .navbar a:active, .navbar a:focus {
-  //   color: var(--color-primary); // Customize the active link color
-  // }
+    html {
+        scroll-behavior: smooth; // Enable smooth scrolling
+    }
